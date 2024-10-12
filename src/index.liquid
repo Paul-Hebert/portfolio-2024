@@ -1,17 +1,10 @@
 ---
   layout: layouts/base.liquid
   title: Paul Makes Websites
+  criticalCss: 
+    - solar-system
+    - home
 ---
-{% comment %} Critical, inlined CSS {% endcomment %}
-{% capture css %} 
-  {% include '_assets/styles/solar-system.css' %}
-  {% include '_assets/styles/home.css' %}
-{% endcapture %}
-
-<style>
-  {{ css | cssmin }}
-</style>
-
 <section class="hero">
   <svg class="hero__graphic solar-system" viewBox="0 0 1000 1000">
     <circle cx="500" cy="500" r="90" class="star" />

@@ -2,6 +2,31 @@
   layout: layouts/base.liquid
   title: Writing
 ---
-<section>
+<section class="prose">
   <h1>Writing</h1>
+
+  <p>
+    I enjoy writing about front-end development and design to share knowledge and enhance my own understanding of
+    complex topics.
+  </p>
+
+  <ul class="listings">
+    {% for article in collections.writing %}
+      <li>
+        <article class="card">
+          <img src="{{article.url | articleCoverUrl: article.data.cover}}" alt="" class="card__cover">
+
+          <h2 class="card__title">
+            <a href="{{article.data.externalUrl | default: article.url}}" class="card__link">
+              {{ article.data.title }}
+            </a>
+          </h2>
+
+          <p>{{ article.data.description }}</p>
+
+          <span>{{ article.data.date }}</span>
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
 </section>

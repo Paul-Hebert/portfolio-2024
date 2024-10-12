@@ -1,2 +1,12 @@
 - Improve meta/SEO info
+  - Favicon
 - Improve font loading performance
+  - Host locally
+  - Subset
+- Writing
+  - Finalize design
+  - Sort by date
+  - Extract "featured"
+- Chores
+  - Restore web colors
+  - Fix redirect from old urls

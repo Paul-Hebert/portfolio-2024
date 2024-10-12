@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     {% comment %} Critical, inlined CSS {% endcomment %}
-    {% assign inlinedCssFiles = 'base,header,hero' | split: ',' %}
+    {% assign inlinedCssFiles = 'base,header,hero,prose' | split: ',' %}
     {% assign filesWithPageStyles = inlinedCssFiles | concat: criticalCss %}
 
     {% capture css %} 

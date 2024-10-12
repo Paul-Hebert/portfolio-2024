@@ -1,0 +1,27 @@
+.prose,
+.prose-width {
+  max-width: 40em;
+  width: 100%;
+}
+
+.prose {
+  margin-inline: auto;
+}
+
+.prose > * + * {
+  margin-top: 1em;
+}
+
+.prose > * + :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: 1.75em;
+}
+
+.figure {
+  display: grid;
+  gap: 0.5em;
+  margin-block: 2em;
+}
+
+.figure__caption {
+  text-align: center;
+}

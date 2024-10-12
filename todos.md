@@ -10,6 +10,8 @@
     - Remove border artifacts
     - Set width/height
     - Fallbacks
+  - Add missing articles
+  - Filters?
 - Chores
   - Restore web colors
   - Fix redirect from old urls

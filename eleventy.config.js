@@ -21,7 +21,7 @@ export default function (eleventyConfig) {
     return collection.getFilteredByGlob("src/writing/*/*.md");
   });
 
-  eleventyConfig.addPassthroughCopy("./src/**/*.{png,svg,jpeg,jpg, gif}");
+  eleventyConfig.addPassthroughCopy("./src/**/*.{png,svg,jpeg,jpg,gif}");
 
   // Allow custom JS in articles
   eleventyConfig.addPassthroughCopy("src/writing/**/*.js");

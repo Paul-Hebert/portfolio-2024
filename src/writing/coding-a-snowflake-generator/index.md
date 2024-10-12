@@ -6,5 +6,6 @@ externalUrl: https://cloudfour.com/thinks/coding-a-snowflake-generator/
 externalName: Cloud Four
 date: 2022-12-15
 status: published
-cover: cover.svg
+cover: cover.gif
+featured: true
 ---

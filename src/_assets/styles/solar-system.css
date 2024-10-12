@@ -1,0 +1,71 @@
+.solar-system {
+  overflow: visible;
+}
+
+.star {
+  fill: hsl(50deg, 75%, 60%);
+}
+
+.orbit-group {
+  --start-rotation: 0deg;
+  --rotation-speed: 10s;
+  --orbit-size: 200px;
+  --planet-size: 41px;
+  --planet-color: hsl(200deg, 60%, 50%);
+}
+
+.orbit-group:nth-child(2) {
+  --start-rotation: 100deg;
+  --rotation-speed: 6s;
+  --orbit-size: 305px;
+  --planet-size: 23px;
+  --planet-color: hsl(160deg, 40%, 50%);
+}
+
+.orbit-group:nth-of-type(3) {
+  --start-rotation: 280deg;
+  --rotation-speed: 12s;
+  --orbit-size: 450px;
+  --planet-size: 60px;
+  --planet-color: hsl(15, 72%, 52%);
+}
+
+.planet {
+  animation: orbit var(--rotation-speed) infinite linear;
+  transform-origin: 50% 50%;
+}
+
+.planet-fill,
+.planet-bg {
+  cx: 500px;
+  cy: 500px;
+}
+
+.planet-fill {
+  r: var(--planet-size);
+  fill: var(--planet-color);
+}
+
+.planet-bg {
+  r: calc(var(--planet-size) + 10px);
+  fill: var(--bg);
+}
+
+.orbit-line {
+  stroke: hsl(var(--hue), 10%, 60%);
+  stroke-width: 3;
+  r: var(--orbit-size);
+  cx: 500px;
+  cy: 500px;
+  fill: none;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(var(--start-rotation)) translateX(var(--orbit-size));
+  }
+  to {
+    transform: rotate(calc(var(--start-rotation) + 360deg))
+      translateX(var(--orbit-size));
+  }
+}

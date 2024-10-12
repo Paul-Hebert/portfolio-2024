@@ -1,0 +1,21 @@
+.header__nav {
+  display: flex;
+  justify-content: end;
+  gap: 1.5em;
+  padding: 1em;
+  font-size: calc(0.25cqw + 1em);
+}
+
+.header__link {
+  color: var(--color);
+  text-decoration: none;
+  transition: color 0.1s ease-out;
+}
+
+.header__link:hover {
+  color: var(--color-emphasis);
+}
+
+.header__home {
+  margin-right: auto;
+}

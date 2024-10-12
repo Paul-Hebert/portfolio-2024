@@ -1,0 +1,41 @@
+.hero {
+  display: grid;
+  gap: 1em;
+  align-self: stretch;
+}
+
+.hero__heading {
+  font-weight: 300;
+  font-size: clamp(1.75em, calc(4cqw + 0.5em), 4em);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.hero__heading b {
+  font-weight: 700;
+  color: var(--color-emphasis);
+}
+
+@media (orientation: portrait) {
+  .hero {
+    align-content: start;
+    grid-template-rows: auto auto;
+    align-content: start;
+  }
+
+  .hero__graphic {
+    margin-inline: auto;
+    max-height: 90%;
+    max-width: 80%;
+    width: 100%;
+  }
+}
+
+@media (orientation: landscape) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: calc(4cqw + 0.5em);
+    align-items: center;
+  }
+}

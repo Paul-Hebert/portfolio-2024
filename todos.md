@@ -5,8 +5,12 @@
   - Subset
 - Writing
   - Finalize design
-  - Sort by date
-  - Extract "featured"
+  - Better sorting
+  - Cover images
+    - Remove border artifacts
+    - Set width/height
+    - Fallbacks
 - Chores
   - Restore web colors
   - Fix redirect from old urls
+- Basic page transitions

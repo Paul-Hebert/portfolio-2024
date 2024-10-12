@@ -1,0 +1,2 @@
+- Improve meta/SEO info
+- Improve font loading performance

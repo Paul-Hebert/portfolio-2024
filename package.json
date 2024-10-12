@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-2024",
+  "description": "Paul's portfolio",
+  "scripts": {
+    "start": "npx @11ty/eleventy --watch --serve --quiet",
+    "build": "npx @11ty/eleventy",
+    "lint:check": "prettier --check .",
+    "lint": "prettier --write ."
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@shopify/prettier-plugin-liquid": "^1.5.2",
+    "clean-css": "^5.3.3",
+    "prettier": "^3.3.3"
+  },
+  "type": "module"
+}

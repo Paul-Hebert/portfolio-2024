@@ -15,6 +15,7 @@
     grid-template-areas:
       "title title"
       "cover info";
+    column-gap: 1.5em;
   }
 }
 
@@ -24,6 +25,7 @@
       "cover title"
       "cover info";
     align-items: center;
+    row-gap: 1em;
     column-gap: clamp(2em, calc(2cqw + 0.5em), 3em);
   }
 

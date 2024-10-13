@@ -1,7 +1,7 @@
 .listings {
   list-style: none;
   display: grid;
-  gap: 3em;
-  margin-block: 2em;
+  gap: 4em;
+  margin-block: 4em;
   padding: 0;
 }

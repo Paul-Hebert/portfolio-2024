@@ -7,4 +7,5 @@ externalName: Cloud Four
 date: 2021-09-30
 status: published
 cover: cover.jpg
+featured: true
 ---

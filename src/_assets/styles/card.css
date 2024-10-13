@@ -8,7 +8,7 @@
   .card {
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    gap: 2em;
+    column-gap: clamp(2em, calc(2cqw + 0.5em), 3em);
   }
 }
 
@@ -27,6 +27,11 @@
 
 .card__cover {
   border-radius: 0.5cqw;
+  transition: transform 0.2s ease-out;
+}
+
+.card:hover .card__cover {
+  transform: scale(1.03) rotate(-0.75deg) translateY(-2px);
 }
 
 .card__link {

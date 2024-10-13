@@ -10,6 +10,7 @@
     - Remove border artifacts
     - Set width/height
     - Fallbacks
+    - Swapped for Cloudinary and ch unit articles?
   - Add missing articles
   - Filters?
 - Chores

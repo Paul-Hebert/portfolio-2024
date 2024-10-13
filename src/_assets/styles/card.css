@@ -1,33 +1,60 @@
 .card {
   display: grid;
-  gap: 1em;
+  gap: 0.75em;
   position: relative;
+  grid-template-areas:
+    "cover"
+    "title"
+    "info";
 }
 
 @container (width > 600px) {
   .card {
     grid-template-columns: 1fr 2fr;
-    align-items: center;
-    column-gap: clamp(2em, calc(2cqw + 0.5em), 3em);
+    align-items: start;
+    grid-template-areas:
+      "title title"
+      "cover info";
   }
 }
 
-.card__text {
-  display: grid;
-  gap: 0.75em;
+@container (width > 800px) {
+  .card {
+    grid-template-areas:
+      "cover title"
+      "cover info";
+    align-items: center;
+    column-gap: clamp(2em, calc(2cqw + 0.5em), 3em);
+  }
+
+  .card__title {
+    align-self: end;
+  }
+
+  .card__info {
+    align-self: start;
+  }
 }
 
 .card__title {
   font-size: clamp(1.5em, calc(2cqw + 1em), 3em);
+  grid-area: title;
 }
 
 .card__description {
   font-size: clamp(1em, calc(2cqw + 1em), 1.5em);
 }
 
+.card__info {
+  grid-area: info;
+  gap: inherit;
+  display: grid;
+}
+
 .card__cover {
   border-radius: 0.5cqw;
   transition: transform 0.2s ease-out;
+  grid-area: cover;
 }
 
 .card:hover .card__cover {

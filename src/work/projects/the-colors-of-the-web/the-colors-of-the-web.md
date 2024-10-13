@@ -2,7 +2,6 @@
 title: The Colors of the Web
 description: I was curious what colors were being used by large, popular sites, so I decided to find out. Alexa.com maintains a list of the most visited sites on the internet. I wrote a PHP script to scrape the ten most popular sites and record all the colors used in the sites' home pages and style sheets.
 externalUrl: http://paulhebertdesigns.com/web_colors/
-isFavorite: true
 order: 2
 ---
 

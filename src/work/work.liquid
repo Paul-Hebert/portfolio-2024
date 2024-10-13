@@ -1,7 +1,25 @@
 ---
-  layout: layouts/base.liquid
+  layout: layouts/listings-page.liquid
   title: Work
 ---
 <section>
   <h1 class="page-heading">Work</h1>
+
+  <ul class="listings">
+    {% for project in collections.projects" %}
+      <li>
+        {{ project.data.title }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2 class="page-heading">Open Source</h2>
+
+  <ul class="listings">
+    {% for project in collections.openSource" %}
+      <li>
+        {{ project.data.title }}
+      </li>
+    {% endfor %}
+  </ul>
 </section>

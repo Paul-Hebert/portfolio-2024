@@ -21,6 +21,14 @@ export default function (eleventyConfig) {
     return collection.getFilteredByGlob("src/writing/*/*.md");
   });
 
+  eleventyConfig.addCollection("projects", function (collection) {
+    return collection.getFilteredByGlob("src/work/projects/*/*.md");
+  });
+
+  eleventyConfig.addCollection("openSource", function (collection) {
+    return collection.getFilteredByGlob("src/work/open-source/*/*.md");
+  });
+
   eleventyConfig.addPassthroughCopy("./src/**/*.{png,svg,jpeg,jpg,gif}");
 
   // Allow custom JS in articles

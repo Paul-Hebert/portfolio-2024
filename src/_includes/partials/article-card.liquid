@@ -1,0 +1,14 @@
+{% capture _cover %}
+  <img src="{{article.url | articleCoverUrl: article.data.cover}}" alt="" class="card__cover">
+{% endcapture %}
+
+{% capture _info %}
+  <p class="card__description">{{ article.data.description }}</p>
+
+  <span>{{ article.data.date | formatDate }}</span>
+{% endcapture %}
+
+{% assign _title = article.data.title %}
+{% assign _url = article.data.externalUrl | default: article.url %}
+
+{% include 'partials/card.liquid', cover: _cover, title: _title, url: _url, info: _info %}

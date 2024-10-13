@@ -1,0 +1,12 @@
+{% capture _cover %}
+  {% comment %} <img src="{{project.url | projectCoverUrl: project.data.cover}}" alt="" class="card__cover"> {% endcomment %}
+{% endcapture %}
+
+{% capture _info %}
+  <p class="card__description">{{ project.data.description }}</p>
+{% endcapture %}
+
+{% assign _title = project.data.title %}
+{% assign _url = project.data.externalUrl | default: project.url %}
+
+{% include 'partials/card.liquid', cover: _cover, title: _title, url: _url, info: _info %}

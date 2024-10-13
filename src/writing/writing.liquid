@@ -8,17 +8,17 @@
   <ul class="listings">
     {% assign articles = collections.writing | filterByFeatured %}
 
-    {% for article in articles" %}
+    {% for _article in articles" %}
       <li>
-        {% include 'partials/card.liquid' %}
+        {% include 'partials/article-card.liquid', article: _article %}
       </li>
     {% endfor %}
 
     {% assign articles = collections.writing | filterByNotFeatured | sort | reverse %}
 
-    {% for article in articles" %}
+    {% for _article in articles" %}
       <li>
-        {% include 'partials/card.liquid' %}
+        {% include 'partials/article-card.liquid', article: _article %}
       </li>
     {% endfor %}
   </ul>

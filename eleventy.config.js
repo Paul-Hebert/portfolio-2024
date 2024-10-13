@@ -5,6 +5,7 @@ import {
   filterByNotFeatured,
 } from "./src/_helpers/filter-by-featured.js";
 import { formatDate } from "./src/_helpers/format-data.js";
+import Image from "@11ty/eleventy-img";
 
 export default function (eleventyConfig) {
   eleventyConfig.addFilter("cssmin", function (code) {
@@ -14,6 +15,37 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("filterByFeatured", filterByFeatured);
   eleventyConfig.addFilter("filterByNotFeatured", filterByNotFeatured);
   eleventyConfig.addFilter("formatDate", formatDate);
+
+  eleventyConfig.addShortcode(
+    "image",
+    async function (
+      src,
+      alt,
+      sizes = "100vh",
+      widths = [500, 1000, 1500],
+      loading = "lazy",
+    ) {
+      let metadata = await Image(`./src/${src}`, {
+        widths,
+        formats: ["avif", "jpeg"],
+        // sharpOptions: {
+        //   animated: true,
+        // },
+        // svgShortCircuit: "size",
+        outputDir: "./_site/img/",
+      });
+
+      return Image.generateHTML(metadata, {
+        alt,
+        sizes,
+        loading: loading,
+        decoding: "async",
+      });
+    },
+  );
+  // For some reason, the outputDir option for the image plugin wasn't working,
+  // so we manually copy them over.
+  eleventyConfig.addPassthroughCopy("./img");
 
   eleventyConfig.addWatchTarget("./src/_assets/**/*");
 

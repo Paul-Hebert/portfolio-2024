@@ -57,6 +57,12 @@
   border-radius: 0.5cqw;
   transition: transform 0.2s ease-out;
   grid-area: cover;
+  display: flex;
+  overflow: hidden;
+}
+
+.card__cover picture {
+  display: flex;
 }
 
 .card:hover .card__cover {

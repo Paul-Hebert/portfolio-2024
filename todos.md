@@ -13,6 +13,7 @@
   - Filters?
 - Work
 
+  - Better image sizing
   - Figure out work examples...
     - Jumbled?
     - Spaced?
@@ -22,6 +23,7 @@
     - Kaleido draw
     - Line drawing component
     - Squiggles and Dots
+  - Better ordering
 
 - Chores
   - Restore web colors

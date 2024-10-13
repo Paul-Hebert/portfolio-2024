@@ -1,6 +1,9 @@
 ---
 title: Cloudinary Developers Demo
-description: We designed and developed a responsive, performant, and accessible demo to explain and showcase how Cloudinary’s APIs help developers solve common problems. The demo increased engagement on the page it was embedded on by over 400% and improved the quality of visitor conversions.
+description: I designed and developed an interactive demo showcasing Cloudinary’s APIs. It increased engagement on their Developers page by 400% and improved the quality of visitor conversions.
+builtWith: Built with Preact
 externalUrl: https://cloudfour.com/made/cloudinary-interactive-demo/
 order: 1
+largeScreenshot: cloudinary-lg.jpg
+smallScreenshot: cloudinary-sm.jpg
 ---

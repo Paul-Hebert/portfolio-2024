@@ -13,13 +13,15 @@
     {% endfor %}
   </ul>
 
-  <h2 class="page-heading">Open Source</h2>
+  {% comment %}
+    <h2 class="page-heading">Open Source</h2>
 
-  <ul class="listings">
-    {% for _project in collections.openSource" %}
-      <li>
-        {% include 'partials/project-card.liquid', project: _project %}
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="listings">
+      {% for _project in collections.openSource" %}
+        <li>
+          {% include 'partials/project-card.liquid', project: _project %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endcomment %}
 </section>

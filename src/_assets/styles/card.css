@@ -54,18 +54,25 @@
 }
 
 .card__cover {
-  border-radius: 0.5cqw;
-  transition: transform 0.2s ease-out;
   grid-area: cover;
   display: flex;
-  overflow: hidden;
 }
 
 .card__cover picture {
   display: flex;
+  border-radius: 0.5cqw;
+  overflow: hidden;
 }
 
-.card:hover .card__cover {
+.card__cover--article {
+  transition: transform 0.2s ease-out;
+}
+
+.card__cover--article picture {
+  background-color: #fff;
+}
+
+.card:hover .card__cover--article {
   transform: scale(1.03) rotate(-0.75deg) translateY(-2px);
 }
 
@@ -85,6 +92,46 @@
   inset: 0;
 }
 
-.card__cover {
-  background-color: #fff;
+.card__screenshots {
+  position: relative;
+  --rot-mod: 1;
+}
+
+.card:hover .card__screenshots {
+  --rot-mod: 1.5;
+}
+
+.card:hover .card__screenshot {
+  translate: 0 -5px;
+}
+
+.card__screenshot {
+  border-radius: 0.75cqw;
+  background: hsl(var(--hue), 20%, 12%);
+  border: 1px solid hsl(var(--hue), 60%, 40%);
+  display: flex;
+}
+
+.card__screenshot {
+  transition:
+    rotate 0.2s ease-out,
+    translate 0.2s ease-out;
+  padding: 2%;
+}
+
+.card__screenshots:has(.card__screenshot--small) .card__screenshot--large {
+  width: 80%;
+  rotate: calc(-1.5deg * var(--rot-mod));
+}
+
+.card__screenshot--small {
+  position: absolute;
+  right: 5%;
+  width: 20%;
+  bottom: -2%;
+  rotate: calc(6deg * var(--rot-mod));
+}
+
+.card__screenshot picture {
+  border: inherit;
 }

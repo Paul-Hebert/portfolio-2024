@@ -1,9 +1,27 @@
 {% capture _cover %}
-  {% comment %} <img src="{{project.url | projectCoverUrl: project.data.cover}}" alt="" class="card__cover"> {% endcomment %}
+  <div class="card__cover">
+    <div class="card__screenshots">
+      {% if project.data.largeScreenshot %}
+        {% assign _src = project.url | articleCoverUrl: project.data.largeScreenshot %}
+        <div class="card__screenshot card__screenshot--large">
+          {% image _src, "", "(min-width: 600px) 33vw, 100vw" %}
+        </div>
+      {% endif %}
+
+      {% if project.data.smallScreenshot %}
+        {% assign _src = project.url | articleCoverUrl: project.data.smallScreenshot %}
+        <div class="card__screenshot card__screenshot--small">
+          {% image _src, "", "(min-width: 600px) 10vw, 30vw" %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
 {% endcapture %}
 
 {% capture _info %}
   <p class="card__description">{{ project.data.description }}</p>
+
+  <p>{{project.data.builtWith}}</p>
 {% endcapture %}
 
 {% assign _title = project.data.title %}

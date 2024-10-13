@@ -1,6 +1,8 @@
 {% capture _cover %}
-  {%assign _src = article.url | articleCoverUrl: article.data.cover%}
-  {% image _src, "", "(min-width: 600px) 33vw, 100vw" %}
+  <div class="card__cover card__cover--article">
+    {% assign _src = article.url | articleCoverUrl: article.data.cover %}
+    {% image _src, "", "(min-width: 600px) 33vw, 100vw" %}
+  </div>
 {% endcapture %}
 
 {% capture _info %}

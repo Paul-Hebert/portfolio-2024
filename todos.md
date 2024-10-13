@@ -8,9 +8,7 @@
   - Better sorting
   - Cover images
     - Remove border artifacts
-    - Set width/height
     - Fallbacks
-    - Swapped for Cloudinary and ch unit articles?
   - Add missing articles
   - Filters?
 - Work
@@ -28,4 +26,3 @@
 - Chores
   - Restore web colors
   - Fix redirect from old urls
-- Basic page transitions

@@ -1,18 +1,17 @@
 - Improve meta/SEO info
-  - Favicon
 - Improve font loading performance
   - Host locally
   - Subset
 - Writing
-  - Finalize design
   - Better sorting
   - Cover images
     - Remove border artifacts
-    - Fallbacks
-  - Add missing articles
   - Filters?
+  - Dates are off (time zones?)
+  - Better styling for self-hosted posts
 - Work
 
+  - Better screenshot for spaces
   - Better image sizing
   - Figure out work examples...
     - Jumbled?
@@ -31,9 +30,10 @@
   - Fix redirect from old urls
 
 - Design thoughts...
-  - Work spacing too small on narrow screens
-  - Card title + description size too similar on narrow screens
   - Larger covers? Especially for work?
   - Make single large screenshot animation similar to article animation?
   - Scale up screenshot animations?
   - Add subheads to listings pages
+  - Change how cover image border radii work so they're more rounded on small screens
+  - TS feedback
+    - I want your name to stand out from the other links somehow, just a touch!

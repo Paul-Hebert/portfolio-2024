@@ -8,6 +8,12 @@
     "info";
 }
 
+@container (width <= 600px) {
+  .card__cover {
+    margin-bottom: 0.5em;
+  }
+}
+
 @container (width > 600px) {
   .card {
     grid-template-columns: 1fr 2fr;
@@ -38,18 +44,24 @@
   }
 }
 
+@container (width > 1000px) {
+  .card {
+    grid-template-columns: 2fr 3fr;
+  }
+}
 .card__title {
   font-size: clamp(1.5em, calc(2cqw + 1em), 3em);
   grid-area: title;
+  text-wrap: pretty;
 }
 
 .card__description {
-  font-size: clamp(1em, calc(2cqw + 1em), 1.5em);
+  font-size: clamp(1em, calc(2cqw + 0.75em), 1.5em);
 }
 
 .card__info {
   grid-area: info;
-  gap: inherit;
+  row-gap: inherit;
   display: grid;
 }
 
@@ -66,10 +78,6 @@
 
 .card__cover--article {
   transition: transform 0.2s ease-out;
-}
-
-.card__cover--article picture {
-  background-color: #fff;
 }
 
 .card:hover .card__cover--article {

@@ -1,7 +1,6 @@
-- Improve meta/SEO info
-- Improve font loading performance
-  - Host locally
-  - Subset
+- Add Github link?
+- Listings
+  - Don't lazy load first image
 - Writing
   - Better sorting
   - Cover images
@@ -11,17 +10,12 @@
   - Better styling for self-hosted posts
 - Work
 
-  - Better screenshot for spaces
+  - Better screenshot for spaced
   - Better image sizing
   - Figure out work examples...
-    - Jumbled?
-    - Spaced?
-    - Web Colors?
-    - Clock Museum?
     - Separate open source section?
     - Kaleido draw
     - Line drawing component
-    - Squiggles and Dots
   - Better ordering
 
 - Chores
@@ -30,10 +24,12 @@
   - Fix redirect from old urls
 
 - Design thoughts...
+
   - Larger covers? Especially for work?
-  - Make single large screenshot animation similar to article animation?
-  - Scale up screenshot animations?
   - Add subheads to listings pages
   - Change how cover image border radii work so they're more rounded on small screens
   - TS feedback
     - I want your name to stand out from the other links somehow, just a touch!
+
+- Future
+  - RSS

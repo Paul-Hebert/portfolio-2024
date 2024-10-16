@@ -36,6 +36,12 @@
   transform-origin: 50% 50%;
 }
 
+@media(prefers-reduced-motion: reduce) {
+  .planet {
+    animation-play-state: paused;
+  }
+}
+
 .planet-fill,
 .planet-bg {
   cx: 500px;

@@ -80,8 +80,11 @@
   transition: transform 0.2s ease-out;
 }
 
-.card:hover .card__cover--article {
-  transform: scale(1.03) rotate(-0.75deg) translateY(-2px);
+@media (prefers-reduced-motion: no-preference) {
+  .card:hover .card__cover--article,
+  .card:hover .card__screenshot {
+    transform: scale(1.03) rotate(-0.75deg) translateY(-2px);
+  }
 }
 
 .card__link {
@@ -105,12 +108,14 @@
   --rot-mod: 1;
 }
 
-.card:hover .card__screenshots {
-  --rot-mod: 1.5;
-}
+@media (prefers-reduced-motion: no-preference) {
+  .card:hover .card__screenshots {
+    --rot-mod: 1.5;
+  }
 
-.card:hover .card__screenshot {
-  translate: 0 -5px;
+  .card:hover .card__screenshot {
+    translate: 0 -5px;
+  }
 }
 
 .card__screenshot {
@@ -123,7 +128,9 @@
 .card__screenshot {
   transition:
     rotate 0.2s ease-out,
-    translate 0.2s ease-out;
+    translate 0.2s ease-out,
+    scale 0.2s ease-out,
+    transform 0.2s ease-out;
   padding: 2%;
 }
 

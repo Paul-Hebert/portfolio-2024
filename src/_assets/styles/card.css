@@ -50,12 +50,6 @@
   }
 }
 
-@container (width > 1200px) {
-  .card {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .card__title {
   font-size: clamp(1.5em, calc(2cqw + 1em), 3em);
   grid-area: title;

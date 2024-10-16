@@ -11,7 +11,7 @@
 - Work
 
   - Better screenshot for spaced
-  - Better image sizing
+  - Better image sizing in projects page
   - Figure out work examples...
     - Separate open source section?
     - Kaleido draw
@@ -25,7 +25,6 @@
 
 - Design thoughts...
 
-  - Larger covers? Especially for work?
   - Add subheads to listings pages
   - Change how cover image border radii work so they're more rounded on small screens
   - TS feedback

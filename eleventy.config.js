@@ -1,20 +1,16 @@
 import CleanCSS from "clean-css";
 import { articleCoverUrl } from "./src/_helpers/article-cover-url.js";
-import {
-  filterByFeatured,
-  filterByNotFeatured,
-} from "./src/_helpers/filter-by-featured.js";
 import { formatDate } from "./src/_helpers/format-data.js";
 import Image from "@11ty/eleventy-img";
+import { sortCollection } from "./src/_helpers/sort-collection.js";
 
 export default function (eleventyConfig) {
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
   eleventyConfig.addFilter("articleCoverUrl", articleCoverUrl);
-  eleventyConfig.addFilter("filterByFeatured", filterByFeatured);
-  eleventyConfig.addFilter("filterByNotFeatured", filterByNotFeatured);
   eleventyConfig.addFilter("formatDate", formatDate);
+  eleventyConfig.addFilter("sortCollection", sortCollection);
 
   eleventyConfig.addShortcode(
     "image",

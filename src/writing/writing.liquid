@@ -6,15 +6,7 @@
   <h1 class="page-heading">Writing</h1>
 
   <ul class="listings">
-    {% assign articles = collections.writing | filterByFeatured %}
-
-    {% for _article in articles" %}
-      <li>
-        {% include 'partials/article-card.liquid', article: _article %}
-      </li>
-    {% endfor %}
-
-    {% assign articles = collections.writing | filterByNotFeatured | sort | reverse %}
+    {% assign articles = collections.writing | sortCollection %}
 
     {% for _article in articles" %}
       <li>

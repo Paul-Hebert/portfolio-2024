@@ -6,7 +6,9 @@
   <h1 class="page-heading">Work</h1>
 
   <ul class="listings">
-    {% for _project in collections.projects" %}
+    {% assign projects = collections.projects | sortCollection %}
+
+    {% for _project in projects" %}
       <li>
         {% include 'partials/project-card.liquid', project: _project %}
       </li>

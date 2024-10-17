@@ -5,4 +5,5 @@ builtWith: Built with love
 externalUrl: https://image-compare-component.netlify.app/
 largeScreenshot: cover.png
 smallScreenshot: image-compare-sm.png
+order: 2
 ---

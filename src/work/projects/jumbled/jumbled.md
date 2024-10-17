@@ -5,4 +5,5 @@ builtWith: Built with Svelte
 externalUrl: https://jumbled.netlify.app/
 largeScreenshot: jumbled-lg.png
 smallScreenshot: jumbled-sm.png
+order: 5
 ---

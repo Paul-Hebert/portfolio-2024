@@ -27,6 +27,7 @@
 
   - Add subheads to listings pages
   - Change how cover image border radii work so they're more rounded on small screens
+    - Also, improve nested corners!
   - TS feedback
     - I want your name to stand out from the other links somehow, just a touch!
 

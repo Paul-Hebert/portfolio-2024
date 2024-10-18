@@ -4,14 +4,14 @@
       {% if project.data.largeScreenshot %}
         {% assign _src = project.url | articleCoverUrl: project.data.largeScreenshot %}
         <div class="card__screenshot card__screenshot--large">
-          {% image _src, "", "(min-width: 600px) 33vw, (min-width: 1000px) 40vw, 100vw"  %}
+          {% image _src, "", "(min-width: 600px) 33vw, (min-width: 1000px) 40vw, 100vw", lazyLoad  %}
         </div>
       {% endif %}
 
       {% if project.data.smallScreenshot %}
         {% assign _src = project.url | articleCoverUrl: project.data.smallScreenshot %}
         <div class="card__screenshot card__screenshot--small">
-          {% image _src, "", "(min-width: 600px) 10vw, 30vw" %}
+          {% image _src, "", "(min-width: 600px) 10vw, 30vw", lazyLoad %}
         </div>
       {% endif %}
     </div>

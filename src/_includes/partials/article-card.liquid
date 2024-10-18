@@ -1,7 +1,7 @@
 {% capture _cover %}
   <div class="card__cover card__cover--article">
     {% assign _src = article.url | articleCoverUrl: article.data.cover %}
-    {% image _src, "", "(min-width: 600px) 33vw, (min-width: 1000px) 40vw, 100vw" %}
+    {% image _src, "", "(min-width: 600px) 33vw, (min-width: 1000px) 40vw, 100vw", lazyLoad %}
   </div>
 {% endcapture %}
 

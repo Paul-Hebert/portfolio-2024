@@ -10,7 +10,8 @@
 
     {% for _article in articles" %}
       <li>
-        {% include 'partials/article-card.liquid', article: _article %}
+        {% assign _lazyLoad = forloop.first != true %}
+        {% include 'partials/article-card.liquid', article: _article, lazyLoad: _lazyLoad %}
       </li>
     {% endfor %}
   </ul>

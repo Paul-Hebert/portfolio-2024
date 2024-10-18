@@ -1,7 +1,7 @@
 .header__nav {
   display: flex;
   justify-content: end;
-  gap: 1.5em;
+  gap: calc(1cqw + 0.5em);
   padding: 1em;
   font-size: calc(0.25cqw + 1em);
 }
@@ -10,6 +10,8 @@
   color: var(--color);
   text-decoration: none;
   transition: color 0.1s ease-out;
+  display: flex;
+  align-items: center;
 }
 
 .header__link:hover {
@@ -18,4 +20,27 @@
 
 .header__home {
   margin-right: auto;
+}
+
+.github-sm {
+  display: inline-block;
+  height: 1em;
+  width: auto;
+}
+
+.github-lg {
+  display: none;
+}
+
+.github-sm path {
+  fill: currentColor;
+}
+
+@media(width > 400px) {
+  .github-sm {
+    display: none;
+  }
+  .github-lg {
+    display: inline;
+  }
 }

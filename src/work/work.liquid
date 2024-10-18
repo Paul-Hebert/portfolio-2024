@@ -10,7 +10,8 @@
 
     {% for _project in projects" %}
       <li>
-        {% include 'partials/project-card.liquid', project: _project %}
+        {% assign _lazyLoad = forloop.first != true %}
+        {% include 'partials/project-card.liquid', project: _project, lazyLoad: _lazyLoad %}
       </li>
     {% endfor %}
   </ul>

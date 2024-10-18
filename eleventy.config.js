@@ -18,9 +18,10 @@ export default function (eleventyConfig) {
       src,
       alt,
       sizes = "100vh",
-      widths = [500, 1000, 1500],
-      loading = "lazy",
+      lazy = true
     ) {
+      const  widths = [500, 1000, 1500];
+
       let metadata = await Image(`./src/${src}`, {
         widths,
         formats: ["avif", "jpeg"],
@@ -34,7 +35,7 @@ export default function (eleventyConfig) {
       return Image.generateHTML(metadata, {
         alt,
         sizes,
-        loading: loading,
+        loading: lazy ? 'lazy' : 'eager',
         decoding: "async",
       });
     },

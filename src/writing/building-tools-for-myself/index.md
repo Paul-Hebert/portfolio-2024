@@ -37,7 +37,7 @@ This process takes a while and there were a few steps that were starting to feel
 
 This step takes a lot of time. The puzzles are more fun when the words overlap in multiple spots and are packed into a small area. I especially like puzzles where there is a "hole" between words where empty cells are entirely locked in.
 
-Trying to find the best combinations takes a lot of time! And I often end up missing some better combinations. I built a tool that generates hundreds of crosswords and once and then sorts them by features that tend to make better puzzles:
+Trying to find the best combinations takes a lot of time! And I often end up missing some better combinations. I built a tool that generates hundreds of crosswords at once and then sorts them by features that I find tend to make better puzzles:
 
 <figure>
 <video src="puzzle-builder-step-1.mp4" controls/>

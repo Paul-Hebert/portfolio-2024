@@ -14,13 +14,8 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addShortcode(
     "image",
-    async function (
-      src,
-      alt,
-      sizes = "100vh",
-      lazy = true
-    ) {
-      const  widths = [500, 1000, 1500];
+    async function (src, alt, sizes = "100vh", lazy = true) {
+      const widths = [500, 1000, 1500];
 
       let metadata = await Image(`./src/${src}`, {
         widths,
@@ -35,7 +30,7 @@ export default function (eleventyConfig) {
       return Image.generateHTML(metadata, {
         alt,
         sizes,
-        loading: lazy ? 'lazy' : 'eager',
+        loading: lazy ? "lazy" : "eager",
         decoding: "async",
       });
     },
@@ -59,7 +54,7 @@ export default function (eleventyConfig) {
     return collection.getFilteredByGlob("src/work/open-source/*/*.md");
   });
 
-  eleventyConfig.addPassthroughCopy("./src/**/*.{png,svg,jpeg,jpg,gif}");
+  eleventyConfig.addPassthroughCopy("./src/**/*.{png,svg,jpeg,jpg,gif,mp4}");
 
   // Allow custom JS in articles
   eleventyConfig.addPassthroughCopy("src/writing/**/*.js");

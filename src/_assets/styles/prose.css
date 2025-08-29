@@ -25,3 +25,12 @@
 .figure__caption {
   text-align: center;
 }
+
+.blog-post {
+  box-sizing: border-box;
+  max-width: min(30em, 100%);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  padding-inline: 1rem;
+  display: grid;
+}

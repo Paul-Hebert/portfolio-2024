@@ -146,8 +146,10 @@
   width: 20%;
   bottom: -2%;
   rotate: calc(6deg * var(--rot-mod));
+  padding: 1.5%;
 }
 
 .card__screenshot picture {
   border: inherit;
+  border-radius: 0.25cqw;
 }

@@ -34,3 +34,9 @@
   padding-inline: 1rem;
   display: grid;
 }
+
+.prose hr {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  opacity: 0.375;
+}

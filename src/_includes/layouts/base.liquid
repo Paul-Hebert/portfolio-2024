@@ -13,7 +13,11 @@
       name="description"
       content="{{ description | default: 'Paul combines code and design to build innovative, fast, and accessible digital experiences.' }}"
     >
-    <meta name="og:image" content="/_assets/branding/og-image.jpg">
+    {% if ogImage %}
+      <meta name="og:image" content="{{ ogImage }}">
+    {% else %}
+      <meta name="og:image" content="/_assets/branding/og-image.jpg">
+    {% endif %}
 
     <link
       rel="icon"

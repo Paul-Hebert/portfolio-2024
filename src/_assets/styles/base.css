@@ -43,6 +43,10 @@ main > section {
   line-height: 1.2;
 }
 
+:where(a) {
+  color: var(--color-emphasis);
+}
+
 img, video {
   max-width: 100%;
   height: auto;

@@ -1,7 +1,7 @@
 ---
 title: "A Puzzle a Day: A Month of Tiled Words"
 description: A little over a month ago, I was nervously getting ready to launch a daily word puzzle. Since then over 36,000 people have spent nearly 6,000 hours solving puzzles and exploring the site. I wanted to share my experience so far, and talk about the next steps for Tiled Words.
-date: 2025-11-19
+date: 2025-11-22
 cover: cover.jpg
 ogImage: /writing/a-month-of-tiled-words/cover.jpg
 status: published

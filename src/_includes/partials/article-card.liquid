@@ -11,9 +11,9 @@
   <span>
     {{ article.data.date | formatDate }}
   
-    {% comment %} {% if article.data.order %}
+    {% if article.data.order %}
       | Featured Article
-    {% endif %} {% endcomment %}
+    {% endif %}
   </span>
 {% endcapture %}
 

@@ -3,6 +3,7 @@ import { articleCoverUrl } from "./src/_helpers/article-cover-url.js";
 import { formatDate } from "./src/_helpers/format-data.js";
 import Image from "@11ty/eleventy-img";
 import { sortCollection } from "./src/_helpers/sort-collection.js";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function (eleventyConfig) {
   eleventyConfig.addFilter("cssmin", function (code) {
@@ -41,6 +42,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./src/_assets/**/*");
   eleventyConfig.addPassthroughCopy("./src/_assets/fonts/**/*.woff2");
+  eleventyConfig.addPassthroughCopy("./src/_assets/styles");
 
   eleventyConfig.addCollection("writing", function (collection) {
     return collection.getFilteredByGlob("src/writing/*/*.md");
@@ -58,6 +60,8 @@ export default function (eleventyConfig) {
 
   // Allow custom JS in articles
   eleventyConfig.addPassthroughCopy("src/writing/**/*.js");
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {

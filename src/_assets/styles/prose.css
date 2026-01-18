@@ -40,3 +40,54 @@
   margin-bottom: 1em;
   opacity: 0.375;
 }
+
+.prose :not(pre) > code {
+  color: var(--color-emphasis);
+  background-color: var(--bg-alt);
+  border: 1px solid var(--color-muted-border);
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.25rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.prose blockquote {
+  background-color: var(--bg-alt);
+  border-left: 4px solid var(--color-muted-border);
+  padding: 1.5rem;
+}
+
+.prose blockquote ul {
+  padding-left: 1rem;;
+}
+
+.prose pre {
+  max-width: 100%;
+  overflow-x: scroll;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: var(--bg-alt);
+  border: 1px solid var(--color-muted-border);
+  border-radius: 0.5rem;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+}
+
+.callout {
+  background-color: var(--bg-alt);
+  border: 1px solid var(--color-emphasis);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  display: grid;
+  gap: 0.5em;
+}
+
+@media(width > 50rem) {
+  .prose > :is(pre, .callout, figure, img, picture, video) {
+    margin-inline: -1rem;
+    max-width: calc(100% + 2rem);
+  }
+}

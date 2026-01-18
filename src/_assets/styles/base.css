@@ -1,8 +1,10 @@
 :root {
   --hue: 250deg;
   --bg: hsl(var(--hue), 60%, 10%);
+  --bg-alt: hsl(var(--hue), 20%, 15%);
 
   --color: hsl(var(--hue), 50%, 90%);
+  --color-muted-border: hsl(var(--hue), 10%, 30%);
   --color-emphasis: hsl(25deg, 80%, 60%);
 }
 

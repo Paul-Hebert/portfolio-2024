@@ -14,5 +14,8 @@
     "clean-css": "^5.3.3",
     "prettier": "^3.3.3"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
+  }
 }

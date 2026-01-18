@@ -105,7 +105,7 @@ need both? Let's see what the Radix docs say:
 
 So Radix provides unstyled components, and then Shadcn adds styles on top of
 that. How does Radix work? You can see for yourself on GitHub:
-[https://github.com/radix-ui/primitives/blob/main/packages/react/radio-group/src/radio.tsx](https://github.com/radix-ui/primitives/blob/main/packages/react/radio-group/src/radio.tsx)
+[https://github.com/radix-ui/...](https://github.com/radix-ui/primitives/blob/main/packages/react/radio-group/src/radio.tsx)
 
 This is getting even more complicated: 215 lines of React code importing 7 other
 files. But what does it actually do?

@@ -21,7 +21,7 @@ Boom! Done. Radio buttons are a built-in HTML element. They've been around for
 
 I dug into our codebase and realized we were using two React components from
 [Shadcn](https://ui.shadcn.com/) to power our radio buttons: `<RadioGroup>` and
-`<RadioGrpoupItem>`.
+`<RadioGroupItem>`.
 
 For those unfamiliar with Shadcn, it's a UI framework that provides a bunch of
 prebuilt UI components for use in your websites. Unlike traditional UI

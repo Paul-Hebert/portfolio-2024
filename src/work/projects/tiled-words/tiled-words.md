@@ -1,6 +1,6 @@
 ---
 title: Tiled Words
-description: Rotate and rearrange tiles to find clues and rebuild a broken crossword in this daily word puzzle! Tiled Words is currently played by a few thousand people every day.
+description: Rotate and rearrange tiles to find clues and rebuild a broken crossword in this award-winning daily word puzzle! Tiled Words was the winner of the Players' Choice award at the 2025 Playlin Awards and has thousands of daily players.
 builtWith: Built with Vue, Nuxt, SVGs, and CSS animations
 externalUrl: https://tiledwords.com
 largeScreenshot: tiled-words-lg.png

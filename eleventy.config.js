@@ -44,6 +44,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/_assets/fonts/**/*.woff2");
   eleventyConfig.addPassthroughCopy("./src/_assets/styles");
 
+  eleventyConfig.addWatchTarget("./src/sriting/**/*");
   eleventyConfig.addCollection("writing", function (collection) {
     return collection.getFilteredByGlob("src/writing/*/*.md");
   });

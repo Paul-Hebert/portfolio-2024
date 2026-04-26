@@ -23,7 +23,8 @@
 }
 
 .figure__caption {
-  text-align: center;
+  font-size: 0.95rem;
+  margin-inline: 1rem;
 }
 
 .blog-post {
@@ -77,9 +78,9 @@ code {
 
 .callout {
   background-color: var(--bg-alt);
-  border: 1px solid var(--color-emphasis);
+  /* border: 1px solid var(--color-emphasis); */
   border-radius: 0.75rem;
-  padding: 0.5rem;
+  padding: 0.75rem;
   font-size: 1.25rem;
   display: flex;
   gap: 0.5rem;
@@ -99,8 +100,13 @@ code {
 }
 
 @media(width > 50rem) {
-  .prose > :is(pre, .callout, figure, img, picture, video) {
+  .prose > :is(pre, .callout, figure, img, picture, video, iframe) {
     margin-inline: -1rem;
     max-width: calc(100% + 2rem);
+    border-radius: 0.25rem;
+  }
+
+  .prose > figure :is(img, picture, video, iframe) {
+    border-radius: 0.25rem;
   }
 }

@@ -36,8 +36,10 @@ Here are a few of our favorites:
 
 - [Invertebrates](https://tiledwords.com/puzzles/2026-03-14)
 - [Seed](https://tiledwords.com/puzzles/2026-03-26)
-- [Cooking Instructions](https://tiledwords.com/puzzles/2026-01-01)
+- [Things in the ocean](https://tiledwords.com/puzzles/2026-03-10)
 - [Space](https://tiledwords.com/puzzles/2026-03-21)
+
+(If you haven't played yet, I recommend reading ["how to play"](https://tiledwords.com/how-to-play) and starting with the [practice puzzle](https://tiledwords.com/puzzles/practice).)
 
 ## Thanks for all the feedback
 

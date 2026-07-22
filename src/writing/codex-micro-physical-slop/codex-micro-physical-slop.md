@@ -51,7 +51,9 @@ The demo video shows a developer creating a word game with a simple voice prompt
 
 Clearly they're proud of the generated game. The video includes a quick, three-second clip:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/m8uUUUsMD3Y?si=28fO5vybO3txmsdV&amp;start=111" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figure class="figure">
+    <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/m8uUUUsMD3Y?si=28fO5vybO3txmsdV&amp;start=111" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</figure>
 
 Their game copies the popular [Word Ladder](https://en.wikipedia.org/wiki/Word_ladder) game originally invented in 1877 by Lewis Carroll, the author of Alice in Wonderland. Unfortunately, you can't play their game anywhere. Luckily, there are already lots of versions of the game online. ([Weaver](https://wordwormdormdork.com/weaver/) is one example.)
 

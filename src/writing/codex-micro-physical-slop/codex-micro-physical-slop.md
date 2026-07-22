@@ -64,7 +64,7 @@ I actually really like word games. I made one of my own: [Tiled Words](https://t
 
 > Tiled Words has something that most of the vibe-coded Wordle wannabes do not: love and care.
 
-I was a little surprised to see Forbes throw shade at vibe-coded word games, but they're not wrong. I am active on [the Word Games subreddit](https://www.reddit.com/r/wordgames) and I love to see people's new games. But recently, more and more of the games seem half-baked: many are broken, uninspired, direct copycats, or have telltile signs of AI design tools. A lot of them feel like they were created via a three-sentence prompt to Codex Micro.
+I was a little surprised to see Forbes throw shade at vibe-coded word games, but they're not wrong. I am active on [the Word Games subreddit](https://www.reddit.com/r/wordgames) and I love to see people's new games. But recently, more and more of the games seem half-baked: many are broken, uninspired, direct copycats, or have telltile signs of AI design tools. Some of them feel like they were created via a three-sentence prompt to Codex Micro.
 
 In other words, they're "slop." [(Merriam Webster's 2025 word of the year.)](https://www.merriam-webster.com/wordplay/word-of-the-year) I'm glad people are able to make the games they want to make, and I'm not wholly opposed to the use of AI tools, but you can tell when someone put love and care into a project and when they didn't.
 

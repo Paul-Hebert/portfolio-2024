@@ -44,7 +44,7 @@ In other words, the Codex Micro gives you some buttons, a knob, and an analog st
 
 You can build all the same things you already can. But now, you don't have to touch your keyboard as much!
 
-The [demo video](https://www.youtube.com/watch?v=m8uUUUsMD3Y) shows a developer creating a word game with a simple voice prompt:
+The demo video shows a developer creating a word game with a simple voice prompt:
 
 > Build a browser game called One Letter Off. Players change one letter at a time to turn the word cold to warm. Add a 30-second timer, streaks, and satisfying tile animations.
 
@@ -52,13 +52,15 @@ Clearly they're proud of the generated game. The video includes a quick, three-s
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/m8uUUUsMD3Y?si=28fO5vybO3txmsdV&amp;start=111" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Their game copies the popular [Word Ladder](https://en.wikipedia.org/wiki/Word_ladder) game originally invented in 1877 by Lewis Carroll, the author of Alice in Wonderland. Unfortunately, you can't play their game anywhere. Luckily, there are already lots of versions of the game online. Here's one example called [Weaver](https://wordwormdormdork.com/weaver/).
+Their game copies the popular [Word Ladder](https://en.wikipedia.org/wiki/Word_ladder) game originally invented in 1877 by Lewis Carroll, the author of Alice in Wonderland. Unfortunately, you can't play their game anywhere. Luckily, there are already lots of versions of the game online. ([Weaver](https://wordwormdormdork.com/weaver/) is one example.)
 
-The three second clip they shared shows almost no gameplay. You can see a player type a four letter word. That's it. Interestingly, the player breaks the rules of the game: they change 2 letters instead of one. It's odd they chose that clip to include. Maybe they don't actually care about the game?
+The three second clip they shared shows almost no gameplay. You can see a player type a four letter word. That's it. Interestingly, the player breaks the rules of the game: they change two letters instead of one. It's odd they chose that clip to include.
+
+Maybe they don't actually care about the game they built?
 
 ## Who cares? It's just a gimmick...
 
-I actually really like word games. I made one of my own: [Tiled Words](https://tiledwords.com). My wife and I have hand-made a puzzle every day for the last 9 months. Forbes recently wrote about the game and [the article](https://www.forbes.com/sites/barrycollins/2026/05/02/bored-of-wordle-its-time-to-give-tiled-words-a-crack/) included an interesting quote:
+I actually really like word games. I made one of my own: [Tiled Words](https://tiledwords.com). My wife and I have made a new puzzle every day for the last 9 months. Forbes recently wrote about the game and [the article](https://www.forbes.com/sites/barrycollins/2026/05/02/bored-of-wordle-its-time-to-give-tiled-words-a-crack/) included an interesting quote:
 
 > Tiled Words has something that most of the vibe-coded Wordle wannabes do not: love and care.
 
@@ -67,6 +69,8 @@ I was a little surprised to see Forbes throw shade at vibe-coded word games, but
 In other words, they're "slop." [(Merriam Webster's 2025 word of the year.)](https://www.merriam-webster.com/wordplay/word-of-the-year) I'm glad people are able to make the games they want to make, and I'm not wholly opposed to the use of AI tools, but you can tell when someone put love and care into a project and when they didn't.
 
 The online places I like to hang out are slowly getting drowned in low-quality AI slop. It's harder and harder to find the interesting human creations in the sea of noise.
+
+## Slop comes to the real world
 
 The Codex Micro has all the hallmarks of slop: it doesn't seem useful or interesting and seems to have been spewed into the world simply because it was possible. OpenAI doesn't even seem particularly proud of it: they didn't make any sort of official announcement post.
 

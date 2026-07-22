@@ -4,6 +4,7 @@ description: "OpenAI has finally released their first piece of long-awaited hard
 date: 2026-07-22
 status: published
 cover: Busy-Board.jpg
+ogImage: /writing/codex-micro-physical-slop/Busy-Board.jpg
 ---
 
 OpenAI recently released their first piece of physical hardware, the Codex Micro. This product release came [a little over a year after they announced they were working with Jony Ive on new AI-powered physical products](https://openai.com/sam-and-jony/):

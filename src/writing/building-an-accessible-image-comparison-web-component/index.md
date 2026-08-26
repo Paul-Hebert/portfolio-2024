@@ -7,5 +7,5 @@ externalName: Cloud Four
 date: 2021-07-14
 status: published
 featured: true
-order: 1
+order: 1.5
 ---
